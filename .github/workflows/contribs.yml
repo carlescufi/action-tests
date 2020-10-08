@@ -14,6 +14,6 @@ jobs:
     name: Contribs
     steps:
       - name: Contribs
-        uses: carlescufi/action-contribs@master
+        uses: carlescufi/action-contribs@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
