@@ -1,0 +1,18 @@
+name: Contribs
+on:
+  schedule:
+    - cron:  '*/15 * * * *'
+#  pull_request_target:
+#    types:
+#      - closed
+#      - labeled
+
+jobs:
+  contribs:
+    runs-on: ubuntu-latest
+    name: Contribs
+    steps:
+      - name: Contribs
+        uses: carlescufi/action-contribs@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
